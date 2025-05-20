@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget & Personal Finance Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #080808;
+            color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #08bcdc;
+            color: white;
+            padding: 20px 0;
+        }
+        main {
+            padding: 30px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            gap: 10px;
+            margin: 0 auto;
+        }
+        a.button {
+            padding: 20px 40px;
+            margin: 10px ;
+            font-size: 16px;
+            color: white;
+            background-color: #08bcdc;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            flex: 1;
+            width: 20%;
+        }
+        a.button:hover {
+            background-color: #4309b5;
+        }
+        #heading {
+            background-color: #ffffff;
+            color: #080808;
+            padding: 10px 0px;
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>SpendSense</h1>
+    </header>
+    <main>
+        <p id="heading">"See where your money goes — and where it can take you."</p>
+
+        <div class="button-container">
+            <a href="/dashboard" class="button">Dashboard</a>
+            <a href="/add-income" class="button">Add Income</a>
+            <a href="/add-expense" class="button">Add Expense</a>
+            <a href="/logout" class="button">Logout</a>
+        </div>
+    </main>
 </body>
 </html>
